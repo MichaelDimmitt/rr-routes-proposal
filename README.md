@@ -18,6 +18,13 @@ Therefore, I am going to start using some of the react-router examples as my ini
 2. auth [examples/auth-router-provider/src/App.tsx](https://github.com/remix-run/react-router/blob/main/examples/auth-router-provider/src/App.tsx) 
 3. transitions [examples/view-transitions/src/main.tsx](https://github.com/remix-run/react-router/blob/main/examples/view-transitions/src/main.tsx)
 
+<details>
+  <summary>react-router, example section, lines of code result</summary>
+
+![image](/assets/lines_of_code_image.png)
+
+</details>
+
 This project will have a test folder that uses cypress to assert the routes output match desired results.
 
 Resources:
