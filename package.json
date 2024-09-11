@@ -1,0 +1,17 @@
+{
+  "name": "react-routes",
+  "version": "0.0.1",
+  "description": "cli for showing routes for react-router",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "react-router",
+    "cli",
+    "routes"
+  ],
+  "author": "michaeldimmitt",
+  "license": "ISC"
+}
