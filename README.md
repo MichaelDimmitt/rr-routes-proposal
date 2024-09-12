@@ -1,4 +1,4 @@
-## react-routes proposal for react router
+## React-Routes, a proposal for react router
 A command to list routes for an application that uses react router.
 
 ## Objectives:
@@ -9,21 +9,20 @@ A command to list routes for an application that uses react router.
 1. a top level typescript config enables interaction with jsx elements
 2. the following command is used to run the implementations file with typescript `npx tsx src/implementations.ts`
 
-#### V1, react-routes worked but required both an app and cypress implementation to run.
-#### V2, react-routes is working and is a full cli solution with no server needing to run. 🎉
-It can be verified using the command: `npx tsx src/implementations.ts`
+**V1, react-routes worked but required both an app and cypress implementation to run.**  
+**V2, react-routes is working and is a full cli solution with no server needing to run. 🎉**  
 
+use the command: `npx tsx src/implementations.ts` to see v2 in action!
 
 <details>
   <summary>
 
 ## Examples of v2 in action!
-
 </summary>
+   
+![image](/assets/it_works.png)
 
 </details>
-
-![image](/assets/it_works.png)
 
 <details>
   <summary>
@@ -46,7 +45,7 @@ Therefore, I am going to start using some of the react-router examples as my ini
 </details>
 
 <details>
-  <summary>react-router, example section, lines of code result</summary>
+  <summary>react-router, example section, lines of code analysis</summary>
 
 ![image](/assets/lines_of_code_image.png)
 
