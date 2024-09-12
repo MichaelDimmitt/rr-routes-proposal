@@ -4,7 +4,8 @@
   "description": "cli for showing routes for react-router",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update": "time $(rm -rf examples; git clone --depth=1 https://github.com/remix-run/react-router.git; mv react-router/examples examples; rm -rf react-router;)"
   },
   "keywords": [
     "react",
