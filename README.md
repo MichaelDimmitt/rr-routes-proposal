@@ -9,9 +9,21 @@ A command to list routes for an application that uses react router.
 1. a top level typescript config enables interaction with jsx elements
 2. the following command is used to run the implementations file with typescript `npx tsx src/implementations.ts`
 
-## V1, react-routes worked but required both an app and cypress implementation to run.
-## V2, react-routes is working and is a full cli solution with no server needing to run. 🎉
+#### V1, react-routes worked but required both an app and cypress implementation to run.
+#### V2, react-routes is working and is a full cli solution with no server needing to run. 🎉
 It can be verified using the command: `npx tsx src/implementations.ts`
+
+
+<details>
+  <summary>
+
+## Examples of v2 in action!
+
+</summary>
+
+</details>
+
+![image](/assets/it_works.png)
 
 <details>
   <summary>
