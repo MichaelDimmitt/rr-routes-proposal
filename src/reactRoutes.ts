@@ -1,12 +1,21 @@
+import React from 'react'
 import {Children, isValidElement, ReactNode, Fragment} from "react";
 import { Route } from "react-router-dom";
 function invariant(cond: any, message: any) {
   if (!cond) throw new Error(message);
 }
-interface ResolvedRoute {
-  path: string;
-  children: ResolvedRoute[];
-  props: {children: ResolvedRoute[]};
+
+export function findRoutesList(el) {
+  // Exit condition
+  if(el.type?.name === 'Routes') {return el}
+  // If has children
+  if(el.props?.children) {
+    const childrenLength = el.props.children.length
+    for(let i = 0; i < childrenLength; i++) {
+      // If recursion ever passes shortcircuit early.
+      if(findRoutesList(el.props.children[i])) { return el.props.children[i] }
+    }
+  }
 }
 
 export const getRouteList = (routes: any, appBasePath: string) => {
@@ -20,6 +29,12 @@ export const getRouteList = (routes: any, appBasePath: string) => {
     .filter((x: string) => x !== "" && x !== "/")
     .map((x: string) => `${appBasePath}/` + x);
 };
+
+interface ResolvedRoute {
+  path: string;
+  children: ResolvedRoute[];
+  props: {children: ResolvedRoute[]};
+}
 
 function buildRoutePath(
   routes: ResolvedRoute[],
